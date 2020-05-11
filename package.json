@@ -1,5 +1,5 @@
 {
-    "name": "oauthcenter",
+    "name": "find future",
     "version": "1.0.0",
     "description": "nodejs OAuth authorization server implements based on eggjs",
     "private": true,
@@ -57,6 +57,6 @@
         "type": "git",
         "url": ""
     },
-    "author": "chaozhou",
+    "author": "stoneyulu",
     "license": "MIT"
 }
