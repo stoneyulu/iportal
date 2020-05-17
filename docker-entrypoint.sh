@@ -336,7 +336,7 @@ _main() {
 	echo '# maintainer: stoneyulu <stoneyulu@qq.com.com> (@stoneyulu)'
 
 	# restart mysql
-	service mysql restart
+	#service mysql restart
 
 	# start iportal_server
 	ln -s /home/node_modules /home/iportal/server/node_modules
