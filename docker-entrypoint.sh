@@ -336,10 +336,13 @@ _main() {
 	echo '# maintainer: stoneyulu <stoneyulu@qq.com.com> (@stoneyulu)'
 
 	# restart mysql
-	#service mysql restart
+	usermod -d /var/lib/mysql mysql
+	service mysql restart
 
 	# start iportal_server
-	ln -s /home/node_modules /home/iportal/server/node_modules
+	if [ ! -d "/home/iportal/server/node_modules" ]; then
+        ln -s /home/node_modules /home/iportal/server/node_modules
+	fi
     cd /home/iportal/server/ && npm start
 
     # start iportal_web
